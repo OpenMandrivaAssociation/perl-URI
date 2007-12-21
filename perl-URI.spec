@@ -14,6 +14,7 @@ BuildRequires:	perl
 BuildRequires:	rpm-build >= 4.2-7mdk
 Requires:	perl
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 This Perl module implements the URI class. Objects of this class represent
