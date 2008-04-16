@@ -4,8 +4,8 @@
 
 Summary:	URI module for perl
 Name:		perl-%{module}
-Version:	1.35
-Release:	%mkrel 5
+Version:	1.36
+Release:	%mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}/
