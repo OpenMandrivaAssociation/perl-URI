@@ -4,7 +4,7 @@
 
 Summary:	URI module for perl
 Name:		perl-%{module}
-Version:	1.36
+Version:	1.37
 Release:	%mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
