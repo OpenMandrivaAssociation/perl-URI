@@ -1,28 +1,28 @@
+%define upstream_name	 URI
+%define upstream_version 1.38
+
 %define _requires_exceptions perl(Business::ISBN)
 
-%define module	URI
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 
 Summary:	URI module for perl
-Name:		perl-%{module}
-Version:	1.38
-Release:	%mkrel 2
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{module}/
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/URI/%{module}-%{version}.tar.bz2
-BuildRequires:	perl
+Url:		http://search.cpan.org/dist/%{upstream_name}/
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/URI/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildRequires:	rpm-build >= 4.2-7mdk
-Requires:	perl
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This Perl module implements the URI class. Objects of this class represent
 Uniform Resource Identifier (URI) references as specified in RFC 2396.
 
 %prep
-
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -45,5 +45,3 @@ rm -rf %{buildroot}
 %{perl_vendorlib}/URI.pm
 %{perl_vendorlib}/URI
 %{_mandir}/*/*
-
-
