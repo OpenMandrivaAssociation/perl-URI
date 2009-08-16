@@ -1,5 +1,5 @@
 %define upstream_name	 URI
-%define upstream_version 1.38
+%define upstream_version 1.40
 
 %define _requires_exceptions perl(Business::ISBN)
 
@@ -11,7 +11,7 @@ Summary:	URI module for perl
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/URI/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/URI/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	rpm-build >= 4.2-7mdk
 BuildArch:	noarch
@@ -33,7 +33,6 @@ Uniform Resource Identifier (URI) references as specified in RFC 2396.
 
 %install
 rm -rf %{buildroot}
-
 %makeinstall_std
 
 %clean 
