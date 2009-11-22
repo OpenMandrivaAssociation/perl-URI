@@ -1,5 +1,5 @@
 %define upstream_name	 URI
-%define upstream_version 1.40
+%define upstream_version 1.50
 
 %define _requires_exceptions perl(Business::ISBN)
 
@@ -40,7 +40,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc Changes README rfc2396.txt
+%doc Changes README
 %{perl_vendorlib}/URI.pm
 %{perl_vendorlib}/URI
 %{_mandir}/*/*
