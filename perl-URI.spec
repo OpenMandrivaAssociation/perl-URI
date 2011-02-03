@@ -1,5 +1,5 @@
 %define upstream_name	 URI
-%define upstream_version 1.56
+%define upstream_version 1.58
 
 %define _requires_exceptions perl(Business::ISBN)
 
