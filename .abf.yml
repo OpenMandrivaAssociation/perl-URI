@@ -1,5 +1,6 @@
 removed_sources:
   URI-1.58.tar.gz: 46fcf3ba499d42ab6a7152b0bbbc72f1ff13092c
   URI-1.60.tar.gz: 940315985af24b9f4bb5a9761b1e2bbe6c1d0df3
-sources:
   URI-1.64.tar.gz: 80b43be09119f65f87ac3ab947c1e1cf0e0d0a8a
+sources:
+  URI-1.65.tar.gz: 7ea943bab3746f915ee6cf51104df04bd5a5816e

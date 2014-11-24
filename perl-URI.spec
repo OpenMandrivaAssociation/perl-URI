@@ -1,5 +1,5 @@
 %define modname	URI
-%define modver 1.64
+%define modver 1.65
 
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(Business::ISBN\\)'
@@ -10,7 +10,7 @@
 Summary:	URI module for perl
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	2
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}/
