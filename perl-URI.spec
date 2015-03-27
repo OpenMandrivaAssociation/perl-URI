@@ -1,5 +1,5 @@
 %define modname	URI
-%define modver 1.65
+%define modver 1.67
 
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(Business::ISBN\\)'
@@ -10,7 +10,7 @@
 Summary:	URI module for perl
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	2
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}/
@@ -27,7 +27,7 @@ Uniform Resource Identifier (URI) references as specified in RFC 2396.
 %setup -qn %{modname}-%{modver}
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
