@@ -18,6 +18,7 @@ Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/%{modname}/%{modname}-
 BuildArch:	noarch
 BuildRequires:	perl-devel
 BuildRequires:	perl(JSON::PP)
+BuildRequires:	perl(Test::Needs)
 
 %description
 This Perl module implements the URI class. Objects of this class represent
