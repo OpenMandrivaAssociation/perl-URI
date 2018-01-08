@@ -1,5 +1,5 @@
 %define modname	URI
-%define modver 1.65
+%define modver 1.72
 
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(Business::ISBN\\)'
@@ -10,14 +10,14 @@
 Summary:	URI module for perl
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	5
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}/
 Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/%{modname}/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
-BuildRequires:	perl-JSON-PP
+BuildRequires:	perl(JSON::PP)
 
 %description
 This Perl module implements the URI class. Objects of this class represent
