@@ -1,5 +1,5 @@
 %define modname	URI
-%define modver 1.72
+%define modver 1.73
 
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(Business::ISBN\\)'
@@ -14,7 +14,7 @@ Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}/
-Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/%{modname}/%{modname}-%{modver}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/URI-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
 BuildRequires:	perl(JSON::PP)
@@ -38,7 +38,7 @@ Uniform Resource Identifier (URI) references as specified in RFC 2396.
 %makeinstall_std
 
 %files
-%doc Changes README
+%doc Changes
 %{perl_vendorlib}/URI.pm
 %{perl_vendorlib}/URI
 %{_mandir}/man3/*
