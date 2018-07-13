@@ -16,6 +16,8 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}/
 Source0:	http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/URI-%{modver}.tar.gz
 BuildArch:	noarch
+BuildRequires:	perl(Test)
+BuildRequires:	perl(Net::Domain)
 BuildRequires:	perl-devel
 BuildRequires:	perl(JSON::PP)
 BuildRequires:	perl(Test::Needs)
