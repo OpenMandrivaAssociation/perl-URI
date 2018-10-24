@@ -1,5 +1,5 @@
 %define modname	URI
-%define modver 1.73
+%define modver 1.74
 
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(Business::ISBN\\)'
