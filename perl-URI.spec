@@ -11,7 +11,7 @@
 Summary:	URI module for perl
 Name:		perl-%{modname}
 Version:	5.17
-Release:	1
+Release:	2
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}/
