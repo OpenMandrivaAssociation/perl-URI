@@ -10,7 +10,7 @@
 
 Summary:	URI module for perl
 Name:		perl-%{modname}
-Version:	5.28
+Version:	5.29
 Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
