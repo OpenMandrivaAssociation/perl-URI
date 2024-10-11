@@ -11,11 +11,11 @@
 Summary:	URI module for perl
 Name:		perl-%{modname}
 Version:	5.30
-Release:	1
+Release:	2
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{modname}/
-Source0:	http://search.cpan.org/CPAN/authors/id/O/OA/OALDERS/URI-%{version}.tar.gz
+Url:		https://metacpan.org/pod/URI
+Source0:	https://search.cpan.org/CPAN/authors/id/O/OA/OALDERS/URI-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Test)
 BuildRequires:	perl(Net::Domain)
