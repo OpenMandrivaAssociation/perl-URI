@@ -33,6 +33,11 @@ Uniform Resource Identifier (URI) references as specified in RFC 2396.
 
 %prep
 %autosetup -p1 -n %{modname}-%{version}
+# Deal with the fact that we have a newer version of perl(Exporter)
+# than the hardcoded dep...
+
+find . -type f |xargs sed -i -e 's,5\.57,5.77,g'
+
 perl Makefile.PL INSTALLDIRS=vendor
 
 %build
