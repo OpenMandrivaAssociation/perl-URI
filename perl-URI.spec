@@ -10,8 +10,8 @@
 
 Summary:	URI module for perl
 Name:		perl-%{modname}
-Version:	5.30
-Release:	2
+Version:	5.31
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/pod/URI
