@@ -17,6 +17,7 @@ Group:		Development/Perl
 Url:		https://metacpan.org/pod/URI
 Source0:	https://search.cpan.org/CPAN/authors/id/O/OA/OALDERS/URI-%{version}.tar.gz
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl(Test)
 BuildRequires:	perl(Net::Domain)
 BuildRequires:	perl-devel
