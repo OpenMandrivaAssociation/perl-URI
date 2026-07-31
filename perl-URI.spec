@@ -10,7 +10,7 @@
 
 Summary:	URI module for perl
 Name:		perl-%{modname}
-Version:	5.32
+Version:	5.35
 Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
@@ -33,7 +33,7 @@ This Perl module implements the URI class. Objects of this class represent
 Uniform Resource Identifier (URI) references as specified in RFC 2396.
 
 %prep
-%autosetup -p1 -n %{modname}-%{version}
+%autosetup -p1 -n URI-5.35
 # Deal with the fact that we have a newer version of perl(Exporter)
 # than the hardcoded dep...
 
